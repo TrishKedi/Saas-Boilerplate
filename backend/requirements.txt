@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+pydantic
+sqlalchemy
+alembic
+psycopg2-binary
+fastapi-users
+python-dotenv
+httpx
+requests
+stripe
+celery
+redis
+loguru

@@ -1,0 +1,37 @@
+name: Deploy Backend to AWS EC
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set-up ssh access
+        run: |
+          echo "${{ secrets.AWS_PRIVATE_KEY }}" | awk '{gsub(/\\n/,"\n")}1' > private_key.pem
+          chmod 600 private_key.pem
+
+      - name: Deploy to AWS EC2
+        uses: appleboy/ssh-action@master
+        with: 
+          host: ${{ secrets.AWS_EC2_IP }}
+          username: ${{ secrets.AWS_EC2_USER }}
+          key: ${{ secrets.AWS_PRIVATE_KEY }}
+          script: |
+            cd /home/ubuntu
+
+            if [ ! -d "ai-based-video-analytics" ]; then
+              git clone https://github.com/TrishKedi/Saas-Boilerplate.git
+            fi
+
+            cd Saas-Boilerplate
+            git reset --hard
+            git pull origin main
+
