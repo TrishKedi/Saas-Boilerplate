@@ -1,9 +1,9 @@
-# íº€ Scalable SaaS Boilerplate for AI-Powered Applications
+# ï¿½ï¿½ï¿½ Scalable SaaS Boilerplate for AI-Powered Applications
 
-## í³Œ Overview
+## ï¿½ï¿½ï¿½ Overview
 This project is a **scalable SaaS boilerplate** designed for AI-powered applications. It provides a robust full-stack foundation with authentication, payments, API access, and AI model integration. Built with **modern technologies**, it is containerized, cloud-ready, and optimized for scalability.
 
-## í´¥ Features
+## ï¿½ï¿½ï¿½ Features
 - **Full-Stack Architecture** (Next.js + FastAPI)
 - **User Authentication** (OAuth, JWT, NextAuth.js)
 - **Subscription-Based Payments** (Stripe Integration)
@@ -13,7 +13,7 @@ This project is a **scalable SaaS boilerplate** designed for AI-powered applicat
 - **CI/CD Pipeline** (GitHub Actions, Terraform, Infrastructure as Code)
 - **Monitoring & Logging** (Prometheus, Grafana, Loki)
 
-## í³‚ Folder Structure
+## ï¿½ï¿½ï¿½ Folder Structure
 ```
 SaaS-Boilerplate/
 â”œâ”€â”€ backend/          # FastAPI Backend
@@ -45,7 +45,7 @@ SaaS-Boilerplate/
 â””â”€â”€ LICENSE
 ```
 
-## íº€ Getting Started
+## ï¿½ï¿½ï¿½ Getting Started
 ### 1ï¸âƒ£ Clone the Repository
 ```bash
 git clone https://github.com/yourusername/SaaS-Boilerplate.git
@@ -74,7 +74,7 @@ npm run dev
 docker-compose up --build
 ```
 
-## í»  Tech Stack
+## ï¿½ï¿½ï¿½ Tech Stack
 | Component | Technology |
 |-----------|-----------|
 | **Frontend** | Next.js, TypeScript, TailwindCSS |
@@ -85,12 +85,8 @@ docker-compose up --build
 | **Infra** | Docker, Kubernetes, Terraform |
 | **CI/CD** | GitHub Actions, AWS/GCP |
 
-## í³œ License
-This project is licensed under the **MIT License**.
 
-## í±¥ Contributors
-- **Your Name** - [GitHub](https://github.com/yourusername)
 
 ---
-í²¡ *Looking to contribute? Open an issue or create a pull request!*
+ï¿½ï¿½ï¿½ *Looking to contribute? Open an issue or create a pull request!*
 
