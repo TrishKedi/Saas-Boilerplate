@@ -27,7 +27,7 @@ jobs:
           script: |
             cd /home/ubuntu
 
-            if [ ! -d "ai-based-video-analytics" ]; then
+            if [ ! -d "Saas-Boilerplate" ]; then
               git clone https://github.com/TrishKedi/Saas-Boilerplate.git
             fi
 
