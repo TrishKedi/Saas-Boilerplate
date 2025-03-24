@@ -67,7 +67,7 @@ export default function Dashboard() {
   const { mutate: subscribe, status: subscribStatus } = useMutation({
     mutationFn: async () => {
         const res = await axios.post(`${BASE_URL}/payments/create-checkout-session`, {}, AUTH_HEADER);
-        console.log(res.data)
+       
         return res.data;
 
     },
