@@ -1,7 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { useMutation, useQuery } from "@tanstack/react-query";
+import { useMutation} from "@tanstack/react-query";
 import { useRouter } from "next/navigation";
 import { useLogout, useUser } from "../hooks/useAuth";
 import { motion } from "framer-motion";
@@ -42,7 +41,7 @@ export default function Dashboard() {
         toast.error("Unauthorized: No token found");
     }
 
-  const { mutate: createStripeUser, status: userStatus } = useMutation({
+  const { mutate: createStripeUser } = useMutation({
     mutationFn: async () => {
       
   
@@ -78,7 +77,7 @@ export default function Dashboard() {
 
     },
 
-    onError: (error) => {
+    onError: () => {
         toast.error('Subscription Failed')
     }
   }
